@@ -5,13 +5,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
+const name = "Cecilia";
+const currentDate = new Date();
+const year = currentDate.getFullYear();
+
 ReactDOM.render(
   <div>
-    <h1> My favorite food </h1>
-    <ul>
-      <li> Cherry </li>
-      <li> Coke </li>
-    </ul>
+    <p> Created by {name} </p>
+    <p> Copyright {year}</p>
   </div>,
   document.getElementById("root")
 );
